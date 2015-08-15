@@ -1,23 +1,23 @@
-# My personal blog
+# Mr. Truth Development
 
-This repository is basically the repository of [my own personal blog](http://ricardovsilva.herokkuapp.com).
-I spent one night to learn how to use [Jekyll](http://jekylrb.com) (recommended by [Jhonny Moreira](https://github.com/jhonnymoreira)). And, more and more I'm loving Ruby.
+The repo for my personal blog.
 
-## What am I using?
+## Setting up
 
-- **Programming Language:** Basically Ruby to backend and some HTML, CSS and JS to frontend
-- **Programming IDE:** [Cloud9](https://c9.io/), just fantastic, I'm able to develop and deploy from anywhere
-- **Source Control:** As anyone can see, [GitHub](https://www.github.com/)
-- **Host:** [Heroku](https://www.heroku.com/), I know just a little about it, but already earned my love.
+The blog was mainly made with [Jekyll](https://jekyllrb.com) with some packages from [Node Package Manager (NPM)](https://npmjs.com/), so all you need to do is:
 
-## What's the point?
+`bundle install`
+`npm install`
 
-The point is: Learn to be able to teach. When teaching, I'll learn more. Learning more, I'll teach more. I win, who reads wins. Everybody wins, everybody happy. :)
+If you don't have [Bundler](http://bundler.io/):
+`gem install bundler`
 
-## What's the repo status?
+If you don't have [NodeJS](https://nodejs.org/) (this is where NPM comes from) [read this article](https://docs.npmjs.com/getting-started/installing-node).
 
-The blog is completely function, ugly yet, but functional. If you enver work or heard about [Jekyll](http://jekylrb.com), I recommend you to take a look at the [docs](jekyllrb.com/docs).
+After installing all the dependencies, run [Gulp](http://gulpjs.com/) (our task manager). Gulp is responsible for tasks like:
 
-Feel free to fork and use this repo as your start point, if you want to.
-
-Any doubt, suggestion or affliction? Let me know by opening a issue.
+    * Compile [Sass](http://sass-lang.com/)
+    * Generate the posts
+    * Minify the CSS and the JS
+    * Optimize images
+    * Provide realtime updates while developing
